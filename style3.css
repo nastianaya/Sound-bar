@@ -1,0 +1,50 @@
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: darkorange;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.white-stick{
+    background-color: white;
+    width: 7px;
+    height: 70px;
+    --delay:0s;
+    animation: audioMove 2s var(--delay) infinite linear;
+
+}
+
+
+
+@keyframes audioMove{
+    0%{
+        height: 70px;  
+    }
+
+    10%{
+    
+        height: 105px;
+    }
+
+    20%{
+        height: 70px;
+    }
+
+    30%{
+        height: 35px;        
+    }
+
+    40%{
+        height: 70px;
+    }
+
+    100%{
+        height: 70px;
+    }
+}
